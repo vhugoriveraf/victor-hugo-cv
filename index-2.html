@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Victor Hugo — CV">
+<title>Victor Hugo — CV</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--text:#17212b;--muted:#66717d;--accent:#1769e0;--border:#e2e7ec}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{padding:34px 20px 24px;text-align:center;background:linear-gradient(135deg,#111827,#243b53);color:white}
+h1{margin:0;font-size:clamp(28px,6vw,44px);letter-spacing:-.03em}.tag{margin:8px 0 0;color:#d8e1ea;font-size:16px}
+main{width:min(1100px,calc(100% - 28px));margin:22px auto 40px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:0 8px 30px #10182812;overflow:hidden}
+.toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.label{font-weight:700}.actions{display:flex;gap:9px}.btn{display:inline-block;padding:10px 15px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14px;border:1px solid var(--border);color:var(--text);background:#fff}.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.viewer{background:#e9edf1;padding:16px}.viewer iframe{display:block;width:100%;height:min(78vh,1000px);min-height:620px;border:0;border-radius:10px;background:#fff}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:20px}
+@media(max-width:600px){.toolbar{align-items:stretch}.actions{width:100%}.btn{flex:1;text-align:center}.viewer{padding:8px}.viewer iframe{min-height:70vh}}
+</style>
+</head>
+<body>
+<header>
+<h1>Victor Hugo</h1>
+<p class="tag">Curriculum Vitae</p>
+</header>
+<main>
+<section class="card">
+<div class="toolbar">
+<div class="label">Curriculum Vitae</div>
+<div class="actions">
+<a class="btn primary" href="Victor-Hugo-CV.pdf" download>Download CV</a>
+<a class="btn" href="Victor-Hugo-CV.pdf" target="_blank" rel="noopener">Open PDF</a>
+</div>
+</div>
+<div class="viewer">
+<iframe src="Victor-Hugo-CV.pdf" title="Victor Hugo CV"></iframe>
+</div>
+</section>
+</main>
+<footer>CV • Victor Hugo</footer>
+</body>
+</html>
